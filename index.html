@@ -10,15 +10,23 @@
   <body data-color-scheme="dark">
     <main>
       <h1>Crea il tuo Pet!</h1>
-      <form action="submit" id="pet-creator">
-        <label for="pet-name">Nome del Pet</label>
-        <input type="text" name="pet-name" id="pet-name" required />
-        <label for="pet-owner">Nome del padrone</label>
-        <input type="text" id="pet-owner" required />
-        <label for="species">Spece del Pet</label>
-        <input type="text" id="species" required />
-        <label for="breed">Razza del tuo Pet</label>
-        <input type="text" id="breed" required />
+      <form action="submit" id="pet-creator" class="flex column align-stretch">
+        <label for="pet-name"
+          >Nome del Pet
+          <input type="text" name="pet-name" id="pet-name" required />
+        </label>
+        <label for="pet-owner"
+          >Nome del padrone
+          <input type="text" id="pet-owner" required />
+        </label>
+        <label for="species"
+          >Spece del Pet
+          <input type="text" id="species" required />
+        </label>
+        <label for="breed"
+          >Razza del tuo Pet
+          <input type="text" id="breed" required />
+        </label>
         <button action="submit">Crea!</button>
       </form>
       <h2>Lista dei Pet</h2>
