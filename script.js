@@ -61,5 +61,3 @@ petForm.onsubmit = (ev) => {
   petList.appendChild(hr);
   petForm.reset();
 };
-
-console.log(pets);
