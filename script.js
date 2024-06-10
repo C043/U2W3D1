@@ -39,6 +39,7 @@ const frollino = new Pet("Frollino", "Mario", "Cane", "Barboncino");
 console.log(petty.isSameOwner(frollino));
 
 const petForm = document.getElementById("pet-creator");
+const pets = [];
 petForm.onsubmit = (ev) => {
   ev.preventDefault();
   const petNameValue = document.getElementById("pet-name").value;
@@ -48,6 +49,7 @@ petForm.onsubmit = (ev) => {
   console.log(petNameValue, petOwnerValue, speciesValue, breedValue);
 
   const pet = new Pet(petNameValue, petOwnerValue, speciesValue, breedValue);
+  pets.push(pet);
   const petList = document.getElementById("pet-list");
   const newPetLi = document.createElement("li");
   newPetLi.innerHTML = `<b>Nome del pet:</b> ${pet.petName} <br> 
@@ -59,3 +61,5 @@ petForm.onsubmit = (ev) => {
   petList.appendChild(hr);
   petForm.reset();
 };
+
+console.log(pets);
