@@ -54,6 +54,8 @@ petForm.onsubmit = (ev) => {
   <b>Proprietario:</b> ${pet.ownerName} <br> 
   <b>Specie del pet:</b> ${pet.species} <br>
   <b>Razza del pet:</b> ${pet.breed}`;
+  const hr = document.createElement("hr");
   petList.appendChild(newPetLi);
+  petList.appendChild(hr);
   petForm.reset();
 };
