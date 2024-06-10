@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--     <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css" />
+ -->
+    <title>Classi</title>
   </head>
   <body>
+    <h1>Crea il tuo Pet!</h1>
+    <form action="submit" id="pet-creator">
+      <label for="pet-name">Nome del Pet</label>
+      <input type="text" name="pet-name" id="pet-name" required />
+      <label for="pet-owner">Nome del padrone</label>
+      <input type="text" id="pet-owner" required />
+      <label for="species">Spece del Pet</label>
+      <input type="text" id="species" required />
+      <label for="breed">Razza del tuo Pet</label>
+      <input type="text" id="breed" required />
+      <button action="submit">Crea!</button>
+    </form>
+    <h2>Lista dei Pet</h2>
+    <ul id="pet-list"></ul>
     <script src="script.js"></script>
   </body>
 </html>
